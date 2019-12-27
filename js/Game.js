@@ -46,13 +46,14 @@ class Game {
   handleInteraction (letter){
     if (!this.activePhrase.checkLetter(letter)){
       this.removeLife()
-      $(event.target).css('disabled','true');
-      $(event.target).attr('class','key wrong');
+      $(event.target).css('disabled','true')
+      $(event.target).attr('class','key wrong')
+      if(this.missed >= 5) this.gameOver(false)
     }else {
-      $(event.target).css('disabled','true');
-      $(event.target).attr('class','key chosen');
+      $(event.target).css('disabled','true')
+      $(event.target).attr('class','key chosen')
       this.activePhrase.showMatchedLetter(letter)
-      if(this.checkForWin == true) this.gameOver(true)
+      if(this.checkForWin()) this.gameOver(true)
     }
   }
 
@@ -67,7 +68,8 @@ class Game {
     $('#phrase ul li.show').each(function(i) {
       showCount++
     });
-    if(size === showCount) return true
+    
+    if(size == showCount) return true
     else return false
   }
 
@@ -78,9 +80,7 @@ class Game {
   */
   removeLife() {
     this.missed++
-    if (this.missed < 5)
-      $( ".tries img" ).slice( 0, this.missed ).attr('src','images/lostHeart.png')
-    else this.gameOver(false)
+    $( ".tries img" ).slice( 0, this.missed ).attr('src','images/lostHeart.png')
   }
 
   /**
