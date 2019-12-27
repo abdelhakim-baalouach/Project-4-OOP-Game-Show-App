@@ -57,6 +57,4 @@ class Phrase{
         .text(`${letter}`)
     });
   }
-
-
 }

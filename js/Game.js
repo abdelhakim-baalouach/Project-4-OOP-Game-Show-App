@@ -10,13 +10,13 @@ class Game {
     this.missed = 0
     this.activePhrase = null
     this.sayings = [
-      {saying : 'Life is too important to be taken seriously' , author : 'Oscar Wilde'},
-      {saying : 'Those who realize their folly are not true fools' , author : 'Zhuangzi'},
-      {saying : 'You can never plan the future by the past' , author : 'Edmund Burke'},
-      {saying : 'Be like a tree and let the dead leaves drop' , author : 'Rumi'},
-      {saying : 'There is more to life than increasing its speed' , author : 'Mahatma Gandhi'},
-      {saying : 'Forgiveness is the final form of love' , author : 'Reinhold Niebuhr'},
-      {saying : 'An unexamined life is not worth living' , author : 'Socrates'}
+      {saying : 'life is too important to be taken seriously' , author : 'Oscar Wilde'},
+      {saying : 'those who realize their folly are not true fools' , author : 'Zhuangzi'},
+      {saying : 'you can never plan the future by the past' , author : 'Edmund Burke'},
+      {saying : 'be like a tree and let the dead leaves drop' , author : 'Rumi'},
+      {saying : 'there is more to life than increasing its speed' , author : 'Mahatma Gandhi'},
+      {saying : 'forgiveness is the final form of love' , author : 'Reinhold Niebuhr'},
+      {saying : 'an unexamined life is not worth living' , author : 'Socrates'}
     ]
   }
 
@@ -98,6 +98,4 @@ class Game {
       $('#overlay').show()
     }
   }
-
-
 }

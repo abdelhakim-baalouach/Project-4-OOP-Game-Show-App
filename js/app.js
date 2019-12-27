@@ -3,7 +3,6 @@
  * app.js */
 
 let game
-let phrase
 const Overly = $('#overlay')
 const btRest = $('#btn__reset')
 const buttonsContainer = $('#qwerty')
@@ -22,8 +21,6 @@ buttonsContainer.on('click', 'button.key', (e)=>{
     */
     if ($(event.target).hasClass('key')){
         game.handleInteraction($(event.target).text())
-        // $(event.target).css('disabled','true');
-        // $(event.target).attr('class','key chosen');
     }
 })
 
