@@ -1,0 +1,2 @@
+Welcome to the Game Show App!
+This project was created by using object oriented programming. Javascript classes are created to add phrases to the game board and handle user interactions, dynamically creating object to bring a challenging guessing game to life.
